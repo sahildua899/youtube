@@ -15,7 +15,7 @@ selectedColor.oninput = function(e) {
         if(this.readyState == 4) {
             var mainData = JSON.parse(this.responseText);
             videoSection.innerHTML += `<div class="card-section">
-            <iframe width="1019" autoplay=1 mute=1 height="573" src="https://www.youtube.com/embed/${mainData.youtubeId}?controls=0&showinfo=0&rel=0&autoplay=1&loop=1" autoplay=1 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1019" autoplay=1 mute=1 height="573" src="https://www.youtube.com/embed/${mainData.youtubeId}?controls=1&showinfo=0&rel=0&autoplay=1&loop=1" autoplay=1 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <h2 class = "youtube-name">${mainData.youtubeName} </h2>
                 <h2 class="youtube-brand">${mainData.youtubeChannel}</h2>
                 <h2 class="youtube-views">${mainData.youtubeView} Views</h2>
